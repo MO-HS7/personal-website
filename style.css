@@ -1,0 +1,268 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0f172a;
+  color: white;
+  padding: 20px 0 0 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
+
+.hero-img.raw img {
+  width: 250px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Skills Section */
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 2.2rem;
+  color: #396798;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+
+/* Certificates Section */
+.certificates-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.certificate-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.certificate-item h3 {
+  margin-top: 0;
+  color: #396798;
+}
+
+/* Testimonials Section */
+.testimonials-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.testimonial-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-item span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+}
+
+/* Download Button */
+.btn-download {
+  background-color: #396798;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #2c4f7c;
+}
+
+/* Footer Section */
+.footer p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.footer i {
+  color: #396798;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  font-size: 2.5rem;
+  border: none;
+  outline: none;
+  background-color: #396798;
+  color: white;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #2c4f7c;
+}
